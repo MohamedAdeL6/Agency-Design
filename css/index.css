@@ -1,0 +1,63 @@
+/* start global rules */
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* end global rules */
+.parent{
+    background-color: #eee;
+}
+.container{
+    padding-left:15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:767px){
+    .container{
+        width:750px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+/* ...start */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.header .links{
+    position: relative;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+}
+.header .links .icon span{
+    background-color: #222;
+}
+.header .links .icon span:first-child{
+   height: 3px;
+}
+.header .links .icon span:nth-child(2){
+    height: 3px;
+}
+.header .links .icon span:last-child{
+    height: 3px;
+}
+
+
+
